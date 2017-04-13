@@ -74,6 +74,8 @@ namespace CheeseMVC.Controllers
             return View(new AddMenuItemViewModel(menu, cheeses));
 
         }
+
+        [HttpPost]
         public IActionResult AddItem(AddMenuItemViewModel addMenuItemViewModel)
         {
             if (ModelState.IsValid)
